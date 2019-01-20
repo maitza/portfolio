@@ -17,38 +17,102 @@
     />
     <link rel="stylesheet" href="css/main.css" />
   </head>
-  <body id="bg-img">
-    <div class="container">
-      <!--HEAD-->
-      <header>
-        <div class="logo"><h2 class="logo-border">MK</h2></div>
-        <div class="title">
-          <h1 class="title-h1">Junior Front-End Developer</h1>
+  <body>
+    <!--HEAD-->
+    <header id="top" class="portfolio">
+      <!--NAVIGATION-->
+      <nav class="menu">
+      <div class="logo"><p class="logo-first-letter">M<span class="logo-second-letter">K</span></p></div>
+      <!--HAMBURGER-->
+      <div class="menu-btn">
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+      </div>
+        <ul class="menu-nav">
+          <li class="nav-item-current">
+            <a href="index.html" class="nav-link current">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a href="aboutMe.html" class="nav-link">O mnie</a>
+          </li>
+          <li class="nav-item">
+            <a href="projects.html" class="nav-link">Projekty</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link">Kontakt</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="name"><h1>Mateusz Krztoń</h1></div>
+      <div class="title"><h2>Junior Front-End Develoh2er</p></div>
+      <hr />
+      <div class="social">
+        <i class="fab fa-facebook"></i> <i class="fab fa-instagram"></i>
+        <i class="fab fa-linkedin"></i> <i class="fab fa-twitter"></i>
+        <i class="fab fa-github"></i>
+      </div>
+    </header>
+    <!--ABOUTME-->
+    <main class="aboutMe" id="aboutMe">
+      <h2 class="intro">Intro</h2>
+      <h3 class="intro-title">What I am all about.</h3>
+      <p>I'm Alex Teseira, orem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </main>
+    <!--EXPERIENCE-->
+    <section class="experience" id="experience">
+        <h2 class="intro">Experience</h2>
+        <h3 class="intro-title">Batman would be jealous.</h3>
+        <div class="box">
+          <h4 class="box-title">HTML5/CSS3</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, sed?
+          </p>
         </div>
-        <!--HAMBURGER-->
-        <div class="menu-btn">
-          <div class="btn-line"></div>
-          <div class="btn-line"></div>
-          <div class="btn-line"></div>
+        <div class="box">
+            <h4 class="box-title">SASS/SCSS</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, sed?
+            </p>
+          </div>
+          <div class="box">
+              <h4 class="box-title">JavaScript</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, sed?
+              </p>
+            </div>
+    </section>
+    <!--PROJECTS-->
+    <section class="works" id="works">
+        <h2 class="intro">Works</h2>
+        <h3 class="intro-title">I build the real value.</h3>
+        <div class="projects"></div>
+        <div class="projects"></div>
+        <div class="projects"></div>
+    </section>
+    <!--CONTACT-->
+    <section class="contact" id="contact">
+        <h2 class="intro">Contacts</h2>
+        <h3 class="intro-title">Hire me.</h3>
+        <div class="box-contact">
+          <h5>Location</h5>
+          <p>Brookyln, New York</p>
         </div>
-        <!--NAVIGATION-->
-        <nav class="menu">
-          <ul class="menu-nav">
-            <li class="nav-item-current">
-              <a href="index.html" class="nav-link">Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a href="aboutMe.html" class="nav-link">O mnie</a>
-            </li>
-            <li class="nav-item">
-              <a href="projects.html" class="nav-link">Projekty</a>
-            </li>
-            <li class="nav-item">
-              <a href="contact.html" class="nav-link">Kontakt</a>
-            </li>
-          </ul>
-        </nav>
-      </header>
-    </div>
+        <div class="box-contact">
+            <h5>Phone</h5>
+            <p>+77 234 548 00 00</p>
+        </div>
+        <div class="box-contact">
+              <h5>E-mail</h5>
+              <p>alex.teseira@gmail.com</p>
+        </div>
+        <div class="box-contact">
+                <h5>Web</h5>
+                <p>alex.teseira.com</p>
+        </div>
+    </section>
+    <!--FOOTER-->
+    <footer class="footer-box">
+        <div class="logo"><p>M<span class="logo-letter">K</span></p></div>
+        <div class="copyright">Mateusz Krztoń &copy; 2019</div>
+    </footer>
   </body>
 </html>
