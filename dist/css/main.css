@@ -1,4 +1,69 @@
 @import url("https://fonts.googleapis.com/css?family=Hind");
+.menu {
+  position: fixed;
+  top: 0;
+  overflow: hidden;
+  background-color: #c3c3c3;
+  grid-area: menu;
+  border-bottom: #fff 1px solid;
+  width: 100%;
+  height: 100px;
+  z-index: 0; }
+  .menu .logo-letters {
+    display: block;
+    color: #00ffff;
+    font-size: 1.8rem;
+    font-weight: 900;
+    text-transform: lowercase;
+    left: 0;
+    margin-left: 5vw;
+    margin-top: 4vh;
+    position: absolute;
+    z-index: 2; }
+    .menu .logo-letters .logo-link {
+      text-decoration: none; }
+
+.logo-letters::first-letter {
+  color: #373738; }
+
+.menu-btn {
+  position: absolute;
+  z-index: 2;
+  right: 5vw;
+  top: 7vh;
+  cursor: pointer;
+  transition: all 0.5s ease-out; }
+  .menu-btn .btn-line-1 {
+    width: 10px;
+    height: 1px;
+    margin: 0 0 4px 0;
+    background: #373738;
+    transition: all 0.5s ease-out; }
+  .menu-btn .btn-line-2 {
+    width: 15px;
+    height: 1px;
+    margin: 0 0 4px 0;
+    background: #373738;
+    transition: all 0.5s ease-out; }
+  .menu-btn .btn-line-3 {
+    width: 21px;
+    height: 1px;
+    margin: 0 0 4px 0;
+    background: #373738;
+    transition: all 0.5s ease-out; }
+
+.menu-nav {
+  list-style-type: none;
+  visibility: hidden; }
+  .menu-nav .nav-item {
+    line-height: 2rem; }
+    .menu-nav .nav-item .nav-link {
+      text-decoration: none;
+      color: #000000; }
+
+.nav-link:hover {
+  color: #0080ff; }
+
 * {
   box-sizing: border-box;
   margin: 0; }
@@ -6,34 +71,21 @@
 body {
   color: #373738;
   background: #fff;
-  position: relative;
-  font-family: "Hind", sans-serif; }
+  font-family: "Hind", sans-serif;
+  margin: 0; }
 
-.portfolio {
-  background-image: url(../img/back.jpeg);
+.container {
+  margin: 0 auto;
+  padding: 0;
+  display: grid;
+  grid-template-areas: "menu" "content";
+  grid-template-columns: 1fr 1fr;
+  height: 100vh;
+  width: 100%;
+  background: url(../img/01.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: cover;
-  z-index: -1;
-  width: 100%;
-  height: 100vh;
-  position: relative; }
+  background-size: cover; }
 
-nav .menu {
-  background: #fff;
-  position: fixed;
-  top: 0;
-  overflow: hidden;
-  width: 100%;
-  border-bottom: #fff 1px solid; }
-
-.logo {
-  font-size: 2rem;
-  font-weight: 700;
-  padding-top: 2rem;
-  padding-left: 2rem;
-  text-transform: lowercase; }
-  .logo .logo-first-letter {
-    color: #fff; }
-    .logo .logo-first-letter .logo-second-letter {
-      color: lightseagreen; }
+.title {
+  grid-area: content; }
