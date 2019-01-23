@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Hind");
 @import "config";
+@import "reset";
 @import "mobile";
 @import "menu";
 
@@ -20,17 +21,49 @@ body {
   padding: 0;
   height: 100vh;
   width: 100%;
-  background: url(../img/01.jpg);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
+  @include background;
 }
 
 #top {
   margin: 0 auto;
   padding: 0;
   width: 100%;
-  height: 100px;
+  height: 35vh;
   position: relative;
   z-index: 1;
+}
+
+.title {
+  padding: 0 15px 0 15px;
+  z-index: 2;
+  .name {
+    margin: 0 auto;
+    padding: 0;
+    font-size: 3rem;
+    line-height: 1;
+    font-weight: 800;
+    color: $secondary-color;
+  }
+  .title-position {
+    font-weight: 400;
+    color: $secondary-color;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  }
+  .social {
+    color: $secondary-color;
+    z-index: 3;
+    font-size: 1.4rem;
+    text-align: center;
+    padding: 2rem 0 2rem 0;
+    .social-icons {
+      padding: 0.9rem;
+      display: inline-block;
+      //transition-duration: 0.3s;
+    }
+  }
+}
+.social-icons:hover {
+  color: rgba(255, 255, 255, 0.4);
 }
