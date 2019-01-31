@@ -3,6 +3,7 @@ const menu = document.querySelector(".menu");
 const menuMobileContainer = document.querySelector(".menu-mobile-container");
 const menuNav = document.querySelector(".menu-nav");
 const navItems = document.querySelectorAll(".nav-item");
+const navLink = document.querySelectorAll(".nav-link");
 
 // set state of menu
 let showMenu = false;
@@ -30,3 +31,5 @@ function toggleMenu() {
     showMenu = false;
   }
 }
+
+// close menu after link click
