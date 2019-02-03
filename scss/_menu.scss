@@ -1,6 +1,6 @@
 .container__nav {
   width: 100%;
-  height: 10vh;
+  height: 60px;
   @include easeOut;
   position: fixed;
   top: 0;
@@ -12,7 +12,7 @@
   justify-content: space-between;
   z-index: 3;
   &.show {
-    height: 43vh;
+    height: 240px;
   }
   .container__logo {
     display: block;
@@ -31,10 +31,14 @@
   color: $primary-color;
 }
 
-// HAMBURGER
-
+// HAMBURGER BUTTON
 .container_hamburger {
+  text-decoration: none;
+  display: block;
+  background: $secondary-color;
   padding: 25px 20px 10px 10px;
+  position: fixed;
+  right: 0;
   @include easeOut;
   .container_hamburger--btn-line-1 {
     width: 10px;
@@ -76,19 +80,6 @@
   color: $third-color;
 }
 
-// .menu-mobile-container {
-//   width: 100%;
-//   height: 40vh;
-//   background: $secondary-color;
-//   color: $primary-color;
-//   visibility: hidden;
-//   &.show {
-//     visibility: visible;
-//     z-index: 2;
-//     position: fixed;
-//   }
-// }
-
 .menu-nav {
   list-style-type: none;
   visibility: hidden;
@@ -117,20 +108,14 @@
   }
 }
 
-.current::before {
-  content: "";
-  position: absolute;
-  background: $third-color;
-  width: 8px;
-  height: 2px;
-  margin: 0 auto;
-  margin-top: 15px;
+.nav-item:hover {
+  @include menu-hover;
 }
 
-.nav-link:hover {
-  color: #0080ff;
-}
+// .nav-item:active {
+//   @include menu-hover;
+// }
 
-.nav-link:visited {
-  color: #0080ff;
+.current {
+  @include menu-hover;
 }

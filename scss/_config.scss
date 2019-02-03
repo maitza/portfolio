@@ -30,3 +30,16 @@ $background-opacity: 0.8;
     background: rgba($primary-color, $background-opacity);
   }
 }
+
+@mixin menu-hover {
+  background: transparent;
+  &:before {
+    content: "";
+    position: absolute;
+    background: $third-color;
+    width: 8px;
+    height: 2px;
+    margin: 0 auto;
+    margin-top: 15px;
+  }
+}

@@ -11,9 +11,20 @@ h3 {
   margin: 0;
   padding: 0; }
 
+button,
+input[type="submit"],
+input[type="reset"] {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit; }
+
 .container__nav {
   width: 100%;
-  height: 10vh;
+  height: 60px;
   transition: all 0.5s ease-out;
   position: fixed;
   top: 0;
@@ -25,7 +36,7 @@ h3 {
   justify-content: space-between;
   z-index: 3; }
   .container__nav.show {
-    height: 43vh; }
+    height: 240px; }
   .container__nav .container__logo {
     display: block;
     padding: 10px 10px 10px 20px; }
@@ -40,7 +51,12 @@ h3 {
   color: #5a5d61; }
 
 .container_hamburger {
+  text-decoration: none;
+  display: block;
+  background: #fff;
   padding: 25px 20px 10px 10px;
+  position: fixed;
+  right: 0;
   transition: all 0.5s ease-out; }
   .container_hamburger .container_hamburger--btn-line-1 {
     width: 10px;
@@ -94,20 +110,27 @@ h3 {
       font-weight: 600;
       cursor: pointer; }
 
-.current::before {
-  content: "";
-  position: absolute;
-  background: #c14d50;
-  width: 8px;
-  height: 2px;
-  margin: 0 auto;
-  margin-top: 15px; }
+.nav-item:hover {
+  background: transparent; }
+  .nav-item:hover:before {
+    content: "";
+    position: absolute;
+    background: #c14d50;
+    width: 8px;
+    height: 2px;
+    margin: 0 auto;
+    margin-top: 15px; }
 
-.nav-link:hover {
-  color: #0080ff; }
-
-.nav-link:visited {
-  color: #0080ff; }
+.current {
+  background: transparent; }
+  .current:before {
+    content: "";
+    position: absolute;
+    background: #c14d50;
+    width: 8px;
+    height: 2px;
+    margin: 0 auto;
+    margin-top: 15px; }
 
 * {
   box-sizing: border-box;
@@ -175,23 +198,35 @@ body {
 .social-icons:hover {
   color: rgba(255, 255, 255, 0.4); }
 
-#container__aboutme {
+#container__aboutme,
+#container__experience,
+#container__projects,
+#container__contact {
   width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
   align-items: left;
   padding: 20px 20px 20px 20px; }
-  #container__aboutme .container__title {
+  #container__aboutme .container__title,
+  #container__experience .container__title,
+  #container__projects .container__title,
+  #container__contact .container__title {
     font-size: 2rem;
     font-weight: 700;
     margin: 0; }
-  #container__aboutme .container__info {
+  #container__aboutme .container__info,
+  #container__experience .container__info,
+  #container__projects .container__info,
+  #container__contact .container__info {
     font-size: 1rem;
     padding-bottom: 1.5rem;
     color: #a7aaad;
     font-weight: 400; }
-  #container__aboutme .container__text {
+  #container__aboutme .container__text,
+  #container__experience .container__text,
+  #container__projects .container__text,
+  #container__contact .container__text {
     line-height: 1.5rem;
     color: #a7aaad;
     font-weight: 400; }
