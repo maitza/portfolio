@@ -19,42 +19,41 @@
   </head>
   <body id="smoothScroll">
     <!--HEADER-->
-    <div class="container">
-      <header id="top">
+    <div class="container__wrapper">
+      <header id="container__home">
         <!--NAVIGATION-->
-        <nav class="menu">
-          <div class="menu-container">
-            <div class="logo">
-              <p class="logo-letters">
-                <a href="#top" class="logo-link">MK</a>
-              </p>
-            </div>
-            <!--HAMBURGER-->
-            <div class="menu-btn">
-              <div class="btn-line-1"></div>
-              <div class="btn-line-2"></div>
-              <div class="btn-line-3"></div>
-            </div>
+        <nav class="container__home container__nav">
+          <div class="container__logo">
+            <p class="container__letters">
+              <a href="#top" class="logo-link">MK</a>
+            </p>
           </div>
-          <div class="menu-mobile-container">
-            <ul class="menu-nav">
-              <li class="nav-item">
-                <a href="#top" class="nav-link">Portfolio</a>
-              </li>
-              <li class="nav-item">
-                <a href="#container__aboutme" class="nav-link">O mnie</a>
-              </li>
-              <li class="nav-item">
-                <a href="#experience" class="nav-link">Projekty</a>
-              </li>
-              <li class="nav-item">
-                <a href="#contact" class="nav-link">Kontakt</a>
-              </li>
-            </ul>
+          <!--HAMBURGER-->
+          <div class="container_hamburger">
+            <div class="container_hamburger--btn-line-1"></div>
+            <div class="container_hamburger--btn-line-2"></div>
+            <div class="container_hamburger--btn-line-3"></div>
           </div>
         </nav>
+        <ul class="menu-nav">
+          <li class="nav-item current">
+            <a href="#container__home" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#container__aboutme" class="nav-link">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a href="#container__experience" class="nav-link">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a href="#container__projects" class="nav-link">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a href="#container__contact" class="nav-link">Contact</a>
+          </li>
+        </ul>
       </header>
-      <section class="title">
+      <div class="title">
         <h1 class="name">
           Mateusz <br />
           Krztoń
@@ -67,19 +66,19 @@
           <a href="fb" class="social-icons"><i class="fab fa-twitter"></i></a>
           <a href="fb" class="social-icons"><i class="fab fa-github"></i></a>
         </div>
-      </section>
+      </div>
     </div>
     <!--ABOUTME-->
     <section id="container__aboutme">
-      <h2 class="container__aboutme--intro">Intro</h2>
-      <h3 class="container__aboutme--title">What I am all about.</h3>
-      <p class="container__aboutme--text">
+      <h2 class="container__aboutme container__title">Intro</h2>
+      <h3 class="container__aboutme container__info">What I am all about.</h3>
+      <p class="container__aboutme container__text">
         I'm Alex Teseira, orem ipsum dolor sit amet, consectetur adipisicing
         elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
         ut aliquip ex ea commodo consequat.
       </p>
-      <p class="container__aboutme--text">
+      <p class="container__aboutme container__text">
         <br />
         Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
         dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
@@ -88,62 +87,86 @@
     </section>
     <!--EXPERIENCE-->
     <section id="container__experience">
-      <h2 class="container__experience--title">Experience</h2>
-      <h3 class="container__experience--info">Batman would be jealous.</h3>
-      <div class="container__experience--box">
-        <h4 class="container__experience--name">HTML5/CSS3</h4>
-        <p>
+      <h2 class="container__experience container__title">Experience</h2>
+      <h3 class="container__experience container__info">
+        Batman would be jealous.
+      </h3>
+      <div class="container__experience container__box">
+        <h4 class="container__experience container__lang">HTML5/CSS3</h4>
+        <p class="container__experience container__text">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, sed?
         </p>
       </div>
-      <div class="container__experience--box">
-        <h4 class="container__experience--name">SASS/SCSS</h4>
-        <p>
+      <div class="container__experience container__box">
+        <h4 class="container__experience container__lang">SASS/SCSS</h4>
+        <p class="container__experience container__text">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, sed?
         </p>
       </div>
-      <div class="container__experience--box">
-        <h4 class="container__experience--name">JavaScript</h4>
-        <p>
+      <div class="container__experience container__box">
+        <h4 class="container__experience container__lang">JavaScript</h4>
+        <p class="container__experience container__text">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, sed?
         </p>
       </div>
     </section>
     <!--PROJECTS-->
-    <section id="works">
-      <h2 class="intro">Works</h2>
-      <h3 class="intro-title">I build the real value.</h3>
-      <div class="projects"></div>
-      <div class="projects"></div>
-      <div class="projects"></div>
+    <section id="container__projects">
+      <h2 class="container__projects container__title">Works</h2>
+      <h3 class="container__projects container__info">
+        I build the real value.
+      </h3>
+      <div class="container__projects container__project"></div>
+      <div class="container__projects container__project"></div>
+      <div class="container__projects container__project"></div>
     </section>
     <!--CONTACT-->
-    <section class="contact" id="contact">
-      <h2 class="intro">Contacts</h2>
-      <h3 class="intro-title">Hire me.</h3>
-      <div class="box-contact">
-        <h5>Location</h5>
-        <p>Brookyln, New York</p>
+    <section id="container__contact">
+      <h2 class="container__contact container__title">Contacts</h2>
+      <h3 class="container__contact container__info">Hire me.</h3>
+      <div class="container__contact container__box">
+        <h5 class="container__contact container__box container__title">
+          Location
+        </h5>
+        <p class="container__contact container__box container__text">
+          Brookyln, New York
+        </p>
       </div>
-      <div class="box-contact">
-        <h5>Phone</h5>
-        <p>+77 234 548 00 00</p>
+      <div class="container__contact container__box">
+        <h5 class="container__contact container__box container__title">
+          Phone
+        </h5>
+        <p class="container__contact container__box container__text">
+          +77 234 548 00 00
+        </p>
       </div>
-      <div class="box-contact">
-        <h5>E-mail</h5>
-        <p>alex.teseira@gmail.com</p>
+      <div class="container__contact container__box">
+        <h5 class="container__contact container__box container__title">
+          E-mail
+        </h5>
+        <p class="container__contact container__box container__text">
+          alex.teseira@gmail.com
+        </p>
       </div>
-      <div class="box-contact">
-        <h5>Web</h5>
-        <p>alex.teseira.com</p>
+      <div class="container__contact container__box">
+        <h5 class="container__contact container__box container__title">Web</h5>
+        <p class="container__contact container__box container__text">
+          alex.teseira.com
+        </p>
       </div>
     </section>
     <!--FOOTER-->
-    <footer class="footer-box">
-      <div class="logo">
-        <p>M<span class="logo-letter">K</span></p>
+    <footer class="container__footer">
+      <div class="container__footer container__logo">
+        <p>
+          M<span class="container__footer container__logo container__letter"
+            >K</span
+          >
+        </p>
       </div>
-      <div class="copyright">Mateusz Krztoń &copy; 2019</div>
+      <div class="container__footer container__copyright">
+        Mateusz Krztoń &copy; 2019
+      </div>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="../dist/js/parallax.js"></script>

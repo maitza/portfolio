@@ -16,7 +16,7 @@ body {
   margin: 0;
 }
 
-.container {
+.container__wrapper {
   margin: 0 auto;
   padding: 0;
   height: 100vh;
@@ -24,12 +24,11 @@ body {
   @include background;
 }
 
-#top {
+#container__home {
   margin: 0 auto;
   padding: 0;
   width: 100%;
   height: 35vh;
-  position: relative;
 }
 
 .title {
@@ -75,18 +74,18 @@ body {
   align-items: left;
   padding: 20px 20px 20px 20px;
 
-  .container__aboutme--intro {
+  .container__title {
     font-size: 2rem;
     font-weight: 700;
     margin: 0;
   }
-  .container__aboutme--title {
+  .container__info {
     font-size: 1rem;
     padding-bottom: 1.5rem;
     color: lighten($primary-color, 30%);
     font-weight: 400;
   }
-  .container__aboutme--text {
+  .container__text {
     line-height: 1.5rem;
     color: lighten($primary-color, 30%);
     font-weight: 400;
