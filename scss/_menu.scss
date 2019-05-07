@@ -17,12 +17,14 @@
   .container__logo {
     display: block;
     padding: 10px 10px 10px 20px;
-    .container__letters {
-      display: block;
-      color: $third-color;
-      font-size: 1.8rem;
-      font-weight: 900;
-      text-transform: lowercase;
+    .logo-link {
+      cursor: pointer;
+      .container__letters {
+        color: $third-color;
+        font-size: 1.8rem;
+        font-weight: 900;
+        text-transform: lowercase;
+      }
     }
   }
 }
@@ -83,18 +85,27 @@
 .menu-nav {
   list-style-type: none;
   visibility: hidden;
-  z-index: -100000;
+  //z-index: -100000;
+  @include easeOut;
   margin: 0;
   padding: 70px 20px 10px 20px;
+  transform: translate3d(0, -100%, 0);
   &.show {
     visibility: visible;
     display: inline-block;
     z-index: 3;
     position: fixed;
-    //transition: all 0.9s ease-out;
+    @include easeOut;
+    transform: translate3d(0, 0, 0);
   }
   .nav-item {
     line-height: 2rem;
+    // transform: translate3d(500px, 0, 0);
+    @include easeOut;
+    &.show {
+      // transform: translate3d(0, 0, 0);
+      @include easeOut;
+    }
 
     .nav-link {
       text-decoration: none;

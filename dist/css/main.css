@@ -40,12 +40,13 @@ input[type="reset"] {
   .container__nav .container__logo {
     display: block;
     padding: 10px 10px 10px 20px; }
-    .container__nav .container__logo .container__letters {
-      display: block;
-      color: #c14d50;
-      font-size: 1.8rem;
-      font-weight: 900;
-      text-transform: lowercase; }
+    .container__nav .container__logo .logo-link {
+      cursor: pointer; }
+      .container__nav .container__logo .logo-link .container__letters {
+        color: #c14d50;
+        font-size: 1.8rem;
+        font-weight: 900;
+        text-transform: lowercase; }
 
 .container__letters::first-letter {
   color: #5a5d61; }
@@ -91,16 +92,22 @@ input[type="reset"] {
 .menu-nav {
   list-style-type: none;
   visibility: hidden;
-  z-index: -100000;
+  transition: all 0.5s ease-out;
   margin: 0;
-  padding: 70px 20px 10px 20px; }
+  padding: 70px 20px 10px 20px;
+  transform: translate3d(0, -100%, 0); }
   .menu-nav.show {
     visibility: visible;
     display: inline-block;
     z-index: 3;
-    position: fixed; }
+    position: fixed;
+    transition: all 0.5s ease-out;
+    transform: translate3d(0, 0, 0); }
   .menu-nav .nav-item {
-    line-height: 2rem; }
+    line-height: 2rem;
+    transition: all 0.5s ease-out; }
+    .menu-nav .nav-item.show {
+      transition: all 0.5s ease-out; }
     .menu-nav .nav-item .nav-link {
       text-decoration: none;
       color: #5a5d61;
