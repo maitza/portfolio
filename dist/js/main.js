@@ -44,5 +44,3 @@ function showActive() {
     toggleMenu();
   }
 }
-
-// close menu after link click
