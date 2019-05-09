@@ -1,7 +1,7 @@
 .container__nav {
   width: 100%;
   height: 60px;
-  @include easeInOut;
+  @include easeOut;
   position: fixed;
   top: 0;
   overflow: hidden;
@@ -83,25 +83,23 @@
 }
 
 .menu-nav {
-  width: 100%;
-  height: 100%;
+  width: 150px;
+  height: 240px;
   position: absolute;
-  z-index: -10;
   list-style-type: none;
+  display: inline-block;
   visibility: hidden;
-  @include easeInOut;
   margin: 0;
   padding: 70px 20px 10px 20px;
-  transform: translate3d(0, -100%, 0);
   &.show {
     visibility: visible;
-    display: inline-block;
-    z-index: 3;
-    position: fixed;
-    transform: translate3d(0, 0, 0);
   }
   .nav-item {
     line-height: 2rem;
+    visibility: hidden;
+    &.show {
+      visibility: visible;
+    }
     .nav-link {
       text-decoration: none;
       color: $primary-color;

@@ -25,9 +25,7 @@ input[type="reset"] {
 .container__nav {
   width: 100%;
   height: 60px;
-  transition-duration: 0.4s;
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
+  transition: all 0.4s ease-out;
   position: fixed;
   top: 0;
   overflow: hidden;
@@ -60,25 +58,25 @@ input[type="reset"] {
   padding: 25px 20px 10px 10px;
   position: fixed;
   right: 0;
-  transition: all 0.5s ease-out; }
+  transition: all 0.4s ease-out; }
   .container_hamburger .container_hamburger--btn-line-1 {
     width: 10px;
     height: 1px;
     margin: 0 0 4px 0;
     background: #5a5d61;
-    transition: all 0.5s ease-out; }
+    transition: all 0.4s ease-out; }
   .container_hamburger .container_hamburger--btn-line-2 {
     width: 15px;
     height: 1px;
     margin: 0 0 4px 0;
     background: #5a5d61;
-    transition: all 0.5s ease-out; }
+    transition: all 0.4s ease-out; }
   .container_hamburger .container_hamburger--btn-line-3 {
     width: 21px;
     height: 1px;
     margin: 0 0 4px 0;
     background: #5a5d61;
-    transition: all 0.5s ease-out; }
+    transition: all 0.4s ease-out; }
   .container_hamburger.close .container_hamburger--btn-line-1,
   .container_hamburger.close .container_hamburger--btn-line-2,
   .container_hamburger.close .container_hamburger--btn-line-3 {
@@ -86,32 +84,27 @@ input[type="reset"] {
     height: 1px;
     margin: 0 0 4px 0;
     background: #c14d50;
-    transition: all 0.5s ease-out; }
+    transition: all 0.4s ease-out; }
 
 .logo-link:visited {
   color: #c14d50; }
 
 .menu-nav {
-  width: 100%;
-  height: 100%;
+  width: 150px;
+  height: 240px;
   position: absolute;
-  z-index: -10;
   list-style-type: none;
+  display: inline-block;
   visibility: hidden;
-  transition-duration: 0.4s;
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
   margin: 0;
-  padding: 70px 20px 10px 20px;
-  transform: translate3d(0, -100%, 0); }
+  padding: 70px 20px 10px 20px; }
   .menu-nav.show {
-    visibility: visible;
-    display: inline-block;
-    z-index: 3;
-    position: fixed;
-    transform: translate3d(0, 0, 0); }
+    visibility: visible; }
   .menu-nav .nav-item {
-    line-height: 2rem; }
+    line-height: 2rem;
+    visibility: hidden; }
+    .menu-nav .nav-item.show {
+      visibility: visible; }
     .menu-nav .nav-item .nav-link {
       text-decoration: none;
       color: #5a5d61;
@@ -173,17 +166,18 @@ body {
     z-index: 0;
     background: rgba(90, 93, 97, 0.8); }
 
-#container__home {
+.container__home {
   margin: 0 auto;
   padding: 0;
   width: 100%;
-  height: 35vh; }
+  height: 60px; }
 
 .title {
   padding: 0 15px 0 15px;
   position: absolute;
   z-index: 1;
-  width: 100%; }
+  width: 100%;
+  top: 35vh; }
   .title .name {
     margin: 0 auto;
     padding: 0;
