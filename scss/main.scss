@@ -3,8 +3,13 @@
 @import "reset";
 @import "mobile";
 @import "menu";
+@import "experience";
+@import "projects";
+@import "backtotop";
 
-* {
+*,
+*:after,
+*:before {
   box-sizing: border-box;
   margin: 0;
 }
@@ -37,6 +42,7 @@ body {
   z-index: 1;
   width: 100%;
   top: 35vh;
+  // text-align: center;
   .name {
     margin: 0 auto;
     padding: 0;
@@ -65,12 +71,13 @@ body {
 }
 .social-icons:hover {
   color: rgba(255, 255, 255, 0.4);
+  // color: blue;
 }
 
-#container__aboutme,
-#container__experience,
-#container__projects,
-#container__contact {
+.container__aboutme,
+.container__experience,
+.container__projects,
+.container__contact {
   width: 100%;
   height: 100%;
   display: flex;
@@ -93,5 +100,9 @@ body {
     line-height: 1.5rem;
     color: lighten($primary-color, 30%);
     font-weight: 400;
+    padding-right: 2rem;
+  }
+  .container__project {
+    width: 100%;
   }
 }
