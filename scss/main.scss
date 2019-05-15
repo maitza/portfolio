@@ -1,11 +1,12 @@
 @import url("https://fonts.googleapis.com/css?family=Hind");
 @import "config";
 @import "reset";
-@import "mobile";
 @import "menu";
 @import "experience";
 @import "projects";
 @import "backtotop";
+@import "contact";
+@import "footer";
 
 *,
 *:after,
@@ -83,26 +84,29 @@ body {
   display: flex;
   flex-direction: column;
   align-items: left;
-  padding: 20px 20px 20px 20px;
+  padding: 20px 15px 20px 15px;
 
   .container__title {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 700;
     margin: 0;
+    padding: 5px 0 0 0;
   }
   .container__info {
     font-size: 1rem;
     padding-bottom: 1.5rem;
     color: lighten($primary-color, 30%);
     font-weight: 400;
+    padding: 0 0 1rem 0;
   }
   .container__text {
     line-height: 1.5rem;
     color: lighten($primary-color, 30%);
     font-weight: 400;
-    padding-right: 2rem;
+    padding: 5px 0 5px 0;
   }
-  .container__project {
-    width: 100%;
-  }
+}
+
+a {
+  color: $primary-color;
 }

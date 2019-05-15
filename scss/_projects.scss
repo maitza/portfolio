@@ -1,3 +1,34 @@
 .container__project {
-  max-width: 300px;
+  width: 100%;
+  height: auto;
+  padding-bottom: 4px;
+  position: relative;
+}
+
+.projects_img {
+  margin: 0;
+  vertical-align: middle;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    background-color: transparent;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
+    transition-duration: 300ms;
+  }
+}
+
+.projects_img:hover {
+  background: rgba(0, 0, 0, 0.5);
+  transition-duration: 300ms;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
 }

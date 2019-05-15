@@ -36,16 +36,16 @@
               <a href="#home" class="nav-link">Home</a>
             </li>
             <li class="nav-item">
-              <a href="#container__aboutme" class="nav-link">About Me</a>
+              <a href="#aboutme" class="nav-link">About Me</a>
             </li>
             <li class="nav-item">
-              <a href="#container__experience" class="nav-link">Experience</a>
+              <a href="#experience" class="nav-link">Experience</a>
             </li>
             <li class="nav-item">
-              <a href="#container__projects" class="nav-link">Portfolio</a>
+              <a href="#projects" class="nav-link">Portfolio</a>
             </li>
             <li class="nav-item">
-              <a href="#container__contact" class="nav-link">Contact</a>
+              <a href="#contact" class="nav-link">Contact</a>
             </li>
           </ul>
           <!--HAMBURGER-->
@@ -70,13 +70,17 @@
           <a href="https://www.facebook.com/feristronic" class="social-icons"
             ><i class="fab fa-facebook"></i
           ></a>
-          <a href="fb" class="social-icons"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.instagram.com/maitzaa/" class="social-icons"
+            ><i class="fab fa-instagram"></i
+          ></a>
           <a
             href="https://www.linkedin.com/in/mateusz-krzto%C5%84-3612776b/"
             class="social-icons"
             ><i class="fab fa-linkedin"></i
           ></a>
-          <a href="fb" class="social-icons"><i class="fab fa-twitter"></i></a>
+          <a href="https://twitter.com/matkrz" class="social-icons"
+            ><i class="fab fa-twitter"></i
+          ></a>
           <a href="https://github.com/maitza" class="social-icons"
             ><i class="fab fa-github"></i
           ></a>
@@ -85,13 +89,10 @@
     </div>
     <!--ABOUTME-->
     <section class="container__aboutme" id="aboutme">
-      <h2 class="container__aboutme container__title">Intro</h2>
+      <h2 class="container__title">#intro</h2>
       <h3 class="container__aboutme container__info">What I am all about.</h3>
       <p class="container__aboutme container__text">
-        I'm Alex Teseira, orem ipsum dolor sit amet, consectetur adipisicing
-        elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-        ut aliquip ex ea commodo consequat.
+        I'm Mateusz.
       </p>
       <p class="container__aboutme container__text">
         <br />
@@ -102,19 +103,21 @@
     </section>
     <!--EXPERIENCE-->
     <section class="container__experience" id="experience">
-      <h2 class="container__experience container__title">Experience</h2>
+      <h2 class="container__experience container__title">#webdev</h2>
       <h3 class="container__experience container__info">
-        Batman would be jealous.
+        I want to know.
       </h3>
       <div class="container__experience container__box">
-        <h4 class="container__experience container__lang">HTML5/CSS3</h4>
+        <h4 class="container__experience container__lang">
+          <i class="fab fa-html5"></i>HTML5/CSS3
+        </h4>
         <p class="container__experience container__text">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, sed?
         </p>
       </div>
-      <div class="container__experience container__box">
-        <h4 class="container__experience container__lang">SASS/SCSS</h4>
-        <p class="container__experience container__text">
+      <div class="container__experience container__box active">
+        <h4 class="container__experience container__lang active">SASS/SCSS</h4>
+        <p class="container__experience container__text active">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, sed?
         </p>
       </div>
@@ -127,42 +130,48 @@
     </section>
     <!--PROJECTS-->
     <section class="container__projects" id="projects">
-      <h2 class="container__projects container__title">Works</h2>
+      <h2 class="container__projects container__title">#projects</h2>
       <h3 class="container__projects container__info">
         I build the real value.
       </h3>
       <div class="container__project">
-        <img
-          class="container__img"
-          src="../dist/img/website1.jpg"
-          alt="Project 1"
-        />
+        <a href="#projects">
+          <img
+            src="../dist/img/website1.jpg"
+            alt="Project 1"
+            class="projects_img"
+          />
+        </a>
+      </div>
+      <div class="container__project small">
+        <a href="#projects">
+          <img
+            src="../dist/img/website2.jpg"
+            alt="Project 2"
+            class="projects_img"
+          />
+        </a>
       </div>
       <div class="container__project">
-        <img src="../dist/img/website2.jpg" alt="Project 2" />
-      </div>
-      <div class="container__project">
-        <img src="../dist/img/website3.jpg" alt="Project 3" />
+        <a href="#projects">
+          <img
+            src="../dist/img/website3.jpg"
+            alt="Project 3"
+            class="projects_img"
+          />
+        </a>
       </div>
     </section>
     <!--CONTACT-->
-    <section id="container__contact">
-      <h2 class="container__contact container__title">Contacts</h2>
+    <section class="container__contact" id="contact">
+      <h2 class="container__contact container__title">#contact</h2>
       <h3 class="container__contact container__info">Hire me.</h3>
       <div class="container__contact container__box">
         <h5 class="container__contact container__box container__title">
           Location
         </h5>
         <p class="container__contact container__box container__text">
-          Brookyln, New York
-        </p>
-      </div>
-      <div class="container__contact container__box">
-        <h5 class="container__contact container__box container__title">
-          Phone
-        </h5>
-        <p class="container__contact container__box container__text">
-          +77 234 548 00 00
+          Krakow, Poland
         </p>
       </div>
       <div class="container__contact container__box">
@@ -170,26 +179,29 @@
           E-mail
         </h5>
         <p class="container__contact container__box container__text">
-          alex.teseira@gmail.com
+          <a
+            href="mailto:kontakt@mateuszkrzton.pl"
+            class="contact__link"
+            target="_top"
+            >mateusz@krzton.dev</a
+          >
         </p>
       </div>
       <div class="container__contact container__box">
         <h5 class="container__contact container__box container__title">Web</h5>
         <p class="container__contact container__box container__text">
-          alex.teseira.com
+          <a href="mateuszkrzton.pl" class="contact__link">krzton.dev</a>
         </p>
       </div>
     </section>
     <!--FOOTER-->
     <footer class="container__footer">
-      <div class="container__footer container__logo">
-        <p>
-          M<span class="container__footer container__logo container__letter"
-            >K</span
-          >
+      <div class="container__logo">
+        <p class="container__letters">
+          MK
         </p>
       </div>
-      <div class="container__footer container__copyright">
+      <div class="container__copyright">
         Mateusz Krztoń &copy; 2019
       </div>
     </footer>

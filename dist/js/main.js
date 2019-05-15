@@ -2,13 +2,15 @@ const menuBtn = document.querySelector(".container_hamburger");
 const menu = document.querySelector(".container__nav");
 const menuNav = document.querySelector(".menu-nav");
 const navItems = document.querySelectorAll(".nav-item");
-const navLink = document.querySelectorAll(".nav-link");
+// const navLink = document.querySelectorAll(".nav-link");
+const projectsImg = document.querySelectorAll(".container__project");
 
 // set state of menu
 let showMenu = false;
 
 menuBtn.addEventListener("click", toggleMenu);
 menuNav.addEventListener("click", showActive);
+// projectsImg.addEventListener("mouseover", makeOpacity);
 window.addEventListener("scroll", hideMenu);
 
 function toggleMenu() {
@@ -43,6 +45,14 @@ function hideMenu() {
     // set menu state
     showMenu = false;
   }
+}
+
+// change transparency on mouseover in projects section
+
+function makeOpacity(event) {
+  // projectsImg.forEach(item => item.classList.add("opacity"));
+  // highlight the mouseover target
+  // event.target.style.background = "rgba(0,0,0,.5)";
 }
 
 // adding css to active li - menu link

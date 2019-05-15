@@ -1,0 +1,16 @@
+.container__footer {
+  display: flex;
+  width: 100%;
+  height: 7vh;
+  justify-content: center;
+  .container__logo {
+    visibility: hidden;
+    width: 0%;
+  }
+  .container__copyright {
+    padding: 1rem;
+    color: $primary-color;
+    font-size: 0.9rem;
+    // font-weight: 600;
+  }
+}
